@@ -1,14 +1,14 @@
 
 import { Button, Table, TableBody, TableCell, TableColumn, TableHeader, TableRow } from "@nextui-org/react";
 import { useUsersController } from "../usersController";
-import { listUsersState, quantityUsersState } from "../users_states";
+import { listUsersState } from "../users_states";
 
 export default function UsersTable() {
 
     const controller = useUsersController(state => state.object);
 
     const list = listUsersState(state => state.users);
-    const quantity = quantityUsersState(state => state.quantity);
+    // const quantity = quantityUsersState(state => state.quantity);
 
     const handleRowClick = () => {
         controller?.deleteLastUser();
@@ -54,7 +54,7 @@ export default function UsersTable() {
                     </div>
                 </div>
             </div>
-            <p className="font-bold text-lg mt-4">Total users: {quantity}</p>
+            {/* <p className="font-bold text-lg mt-4">Total users: {quantity}</p> */}
         </div>
     )
 }

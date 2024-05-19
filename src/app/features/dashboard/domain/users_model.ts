@@ -11,21 +11,3 @@ export class UsersModel{
         this.status = status;
     }
 }
-
-export let pruebaUsers: UsersModel[] = [
-    new UsersModel("1", "John Doe", "Admin", "Active"),
-    new UsersModel("2", "Jane Smith", "User", "Active"),
-    new UsersModel("3", "Mike Johnson", "User", "Inactive"),
-    new UsersModel("4", "Sarah Williams", "Admin", "Active"),
-    new UsersModel("5", "David Brown", "User", "Inactive"),
-    new UsersModel("1", "John Doe", "Admin", "Active"),
-    new UsersModel("2", "Jane Smith", "User", "Active"),
-    new UsersModel("3", "Mike Johnson", "User", "Inactive"),
-    new UsersModel("4", "Sarah Williams", "Admin", "Active"),
-    new UsersModel("5", "David Brown", "User", "Inactive"),
-    new UsersModel("1", "John Doe", "Admin", "Active"),
-    new UsersModel("2", "Jane Smith", "User", "Active"),
-    new UsersModel("3", "Mike Johnson", "User", "Inactive"),
-    new UsersModel("4", "Sarah Williams", "Admin", "Active"),
-    new UsersModel("5", "David Brown", "User", "Inactive")
-];
